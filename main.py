@@ -32,7 +32,10 @@ for title, description, link, writer, date in zip(titles, descriptions, links, a
     link_href = link['href']
     writer_text = writer.text.strip()
     date_text = date.text.strip()
-
+ 
+ 
+  # I used if else statement because not all news have a title. so we remove the title section on else statement 
+    
     if title_text:
         print("Title:", title_text)
         print(f'written by : {writer_text} on {date_text}')
